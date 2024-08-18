@@ -13,6 +13,8 @@
 		3A266B3E2C707D7B00E03FCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A266B3D2C707D7B00E03FCF /* Preview Assets.xcassets */; };
 		3A266B612C70805C00E03FCF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A266B602C70805C00E03FCF /* User.swift */; };
 		3A266B632C7081F400E03FCF /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A266B622C7081F400E03FCF /* EditUserView.swift */; };
+		3A266B652C70B80400E03FCF /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A266B642C70B80400E03FCF /* UsersView.swift */; };
+		3A266B672C71027100E03FCF /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A266B662C71027100E03FCF /* Job.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		3A266B3D2C707D7B00E03FCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A266B602C70805C00E03FCF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3A266B622C7081F400E03FCF /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
+		3A266B642C70B80400E03FCF /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		3A266B662C71027100E03FCF /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		3A266B682C71B12000E03FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3A266B852C71CB8300E03FCF /* SwiftDataProjectRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftDataProjectRelease.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +61,14 @@
 		3A266B352C707D7A00E03FCF /* SwiftDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				3A266B852C71CB8300E03FCF /* SwiftDataProjectRelease.entitlements */,
+				3A266B682C71B12000E03FCF /* Info.plist */,
 				3A266B362C707D7A00E03FCF /* SwiftDataProjectApp.swift */,
 				3A266B622C7081F400E03FCF /* EditUserView.swift */,
+				3A266B642C70B80400E03FCF /* UsersView.swift */,
 				3A266B602C70805C00E03FCF /* User.swift */,
 				3A266B382C707D7A00E03FCF /* ContentView.swift */,
+				3A266B662C71027100E03FCF /* Job.swift */,
 				3A266B3A2C707D7B00E03FCF /* Assets.xcassets */,
 				3A266B3C2C707D7B00E03FCF /* Preview Content */,
 			);
@@ -143,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A266B652C70B80400E03FCF /* UsersView.swift in Sources */,
+				3A266B672C71027100E03FCF /* Job.swift in Sources */,
 				3A266B392C707D7A00E03FCF /* ContentView.swift in Sources */,
 				3A266B632C7081F400E03FCF /* EditUserView.swift in Sources */,
 				3A266B372C707D7A00E03FCF /* SwiftDataProjectApp.swift in Sources */,
@@ -283,6 +295,7 @@
 				DEVELOPMENT_TEAM = 8KLUKAU6B7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftDataProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,12 +319,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftDataProject/SwiftDataProjectRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataProject/Preview Content\"";
-				DEVELOPMENT_TEAM = 8KLUKAU6B7;
+				DEVELOPMENT_TEAM = 6Z4LHYQS25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftDataProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,8 +338,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mayur.BetterRest.SwiftDataProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayur.SwiftDataProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

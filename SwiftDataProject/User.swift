@@ -9,9 +9,14 @@ import Foundation
 
 @Model
 class User{
-    var name: String
-    var city: String
-    var joiningDate: Date
+    var name: String = "Anonomous"
+    var city: String = "N/A"
+    var joiningDate: Date = Date.now
+    @Relationship(deleteRule: .cascade) var job: [Job]? = [Job]()
+    
+    var unrappedJob: [Job]{
+        job ?? []
+    }
     
     init(name: String, city: String, joinDate: Date) {
         self.name = name
